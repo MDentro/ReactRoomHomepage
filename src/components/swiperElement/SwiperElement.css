@@ -1,0 +1,83 @@
+.swiper-element {
+  position: relative;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-text-wrapper {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider-text-wrapper .swiper-heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 30px;
+}
+
+.slider-text-wrapper p {
+  color: var(--darkGray);
+}
+
+.slider-text-wrapper .cta {
+  display: flex;
+  align-items: center;
+  letter-spacing: 10px;
+  color: var(--black);
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.slider-text-wrapper .cta span {
+  margin-left: 10px;
+}
+
+.navigation-wrapper {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+}
+
+.swiper-image {
+  width: 100%;
+  height: auto;
+}
+
+.prev-arrow,
+.next-arrow {
+  background-color: var(--veryDarkGray);
+  background-position: center;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  padding: 8px 16px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.prev-arrow {
+  background-image: url('../../images/icon-angle-left.svg');
+}
+
+.next-arrow {
+  background-image: url('../../images/icon-angle-right.svg');
+}
+
+@media only screen and (min-width: 668px) {
+  .slide {
+    flex-direction: row;
+  }
+
+  .slider-text-wrapper .swiper-heading {
+    font-size: 40px;
+  }
+}
